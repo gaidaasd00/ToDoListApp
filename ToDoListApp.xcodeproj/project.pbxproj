@@ -13,6 +13,8 @@
 		CCB9565528BBE26800226E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB9565328BBE26800226E6F /* Main.storyboard */; };
 		CCB9565728BBE26B00226E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB9565628BBE26B00226E6F /* Assets.xcassets */; };
 		CCB9565A28BBE26B00226E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB9565828BBE26B00226E6F /* LaunchScreen.storyboard */; };
+		CCB9566628BBF3B100226E6F /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9566528BBF3B100226E6F /* EntryViewController.swift */; };
+		CCB9566828BBF3D400226E6F /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB9566728BBF3D400226E6F /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CCB9565628BBE26B00226E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCB9565928BBE26B00226E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCB9565B28BBE26B00226E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB9566528BBF3B100226E6F /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		CCB9566728BBF3D400226E6F /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		CCB9564C28BBE26800226E6F /* ToDoListApp */ = {
 			isa = PBXGroup;
 			children = (
-				CCB9564D28BBE26800226E6F /* AppDelegate.swift */,
-				CCB9564F28BBE26800226E6F /* SceneDelegate.swift */,
-				CCB9565128BBE26800226E6F /* ViewController.swift */,
-				CCB9565328BBE26800226E6F /* Main.storyboard */,
-				CCB9565628BBE26B00226E6F /* Assets.xcassets */,
-				CCB9565828BBE26B00226E6F /* LaunchScreen.storyboard */,
-				CCB9565B28BBE26B00226E6F /* Info.plist */,
+				CCB9566128BBE27900226E6F /* App */,
+				CCB9566228BBE28B00226E6F /* ViewControllers */,
+				CCB9566328BBE2A600226E6F /* StoryBoards */,
+				CCB9566428BBE2BB00226E6F /* Resources */,
 			);
 			path = ToDoListApp;
+			sourceTree = "<group>";
+		};
+		CCB9566128BBE27900226E6F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9565B28BBE26B00226E6F /* Info.plist */,
+				CCB9564D28BBE26800226E6F /* AppDelegate.swift */,
+				CCB9564F28BBE26800226E6F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CCB9566228BBE28B00226E6F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9565128BBE26800226E6F /* ViewController.swift */,
+				CCB9566528BBF3B100226E6F /* EntryViewController.swift */,
+				CCB9566728BBF3D400226E6F /* TasksViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CCB9566328BBE2A600226E6F /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9565328BBE26800226E6F /* Main.storyboard */,
+				CCB9565828BBE26B00226E6F /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CCB9566428BBE2BB00226E6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9565628BBE26B00226E6F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCB9565228BBE26800226E6F /* ViewController.swift in Sources */,
+				CCB9566628BBF3B100226E6F /* EntryViewController.swift in Sources */,
+				CCB9566828BBF3D400226E6F /* TasksViewController.swift in Sources */,
 				CCB9564E28BBE26800226E6F /* AppDelegate.swift in Sources */,
 				CCB9565028BBE26800226E6F /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QGWXNWMFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoListApp/Info.plist;
+				INFOPLIST_FILE = ToDoListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QGWXNWMFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoListApp/Info.plist;
+				INFOPLIST_FILE = ToDoListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
